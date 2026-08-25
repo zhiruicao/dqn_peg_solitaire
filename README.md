@@ -9,7 +9,7 @@ This project consists of two main components:
 ## ✨ Features
 * **Playable UI:** A clean, visually appealing 2D interface built with Raylib.
 * **Smart AI Assistant:** Press `SPACE` to let the AI calculate and play the optimal next move for you.
-* **Custom Inference Engine:** The PyTorch model is exported to a plain JSON file and inferred purely through raw C++ arrays and loops—no heavy ML libraries required in the frontend!
+* **Custom Inference Engine:** The PyTorch model is exported to a plain JSON file and inferred purely through raw C++ arrays and loops—no heavy ML libraries required in the frontend.
 
 ---
 
@@ -73,7 +73,7 @@ Because a random agent will virtually never solve the board by chance, standard 
 
 ## 🏆 Evaluation
 
-| Step | Win Rate | Avg Remain |
+| Initial Pegs | Win Rate | Avg Remain |
 | :--- | :--- | :--- |
 | 30 | 100.0% | 1.00 |
 | 29 | 100.0% | 1.00 |
@@ -83,7 +83,7 @@ Because a random agent will virtually never solve the board by chance, standard 
 
 ## 🚀 How to Build and Run
 
-### Running the Frontend Game (C++)
+### Running the Game (C++)
 The frontend is built using C++ and the Raylib library. The trained model weights are parsed directly from `assets/weights.json`.
 1. Ensure you have a C++ compiler and [Raylib](https://www.raylib.com/) installed.
 2. Compile the source files (`main.cpp`, `game.cpp`, `engine.cpp`).
